@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Virtual environment
+venv/
+portfolio/venv/
+.env/
+
+# Django stuff
+*.log
+staticfiles/
+media/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Pipenv
+Pipfile.lock
