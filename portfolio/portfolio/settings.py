@@ -13,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 SECRET_KEY = 'django-insecure-n+__$4f0qkr1i_^$5!_kt5=x7fp8kr37fym2)(5cpo-o!y^2e7'
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["benzoceopr.onrender.com", "127.0.0.1", "localhost"]
 
@@ -30,12 +30,14 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "whitenoise.storage.CompressedManifestStaticFilesStorage"
 ]
 
 ROOT_URLCONF = 'portfolio.urls'
