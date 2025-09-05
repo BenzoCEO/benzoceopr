@@ -3,4 +3,4 @@ services:
     name: django-portfolio
     env: python
     buildCommand: "./build.sh"
-    startCommand: "gunicorn portfolio.portfolio.wsgi"
+    startCommand: "gunicorn portfolio.wsgi"
