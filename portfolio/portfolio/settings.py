@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-n+__$4f0qkr1i_^$5!_kt5=x7fp8kr37fym2)(5cpo-o!y^2e7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["main.onrender.com"]
+ALLOWED_HOSTS = ["benzoceopr.onrender.com", "127.0.0.1", "localhost"]
 
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'portfolio.main',
+    'main',
 ]
 
 MIDDLEWARE = [
